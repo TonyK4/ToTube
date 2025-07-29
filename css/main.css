@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .main_link {
     text-decoration: none;
     color:rgb(0, 0, 0);
     cursor:pointer;
+    font-size:15px;
+    font-weight: 300;
+    font-family: 'Roboto';
 }
 
 body {

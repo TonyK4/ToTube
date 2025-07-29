@@ -1,9 +1,13 @@
-body{
-    color:black;
-
-
-}
 .main_link {
     text-decoration: none;
-    color:black;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
 }
+
+body {
+    color:rgb(0, 0, 0);
+ text-decoration: none;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+}
+

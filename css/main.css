@@ -1,18 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.main_link {
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-    cursor:pointer;
-    font-size:15px;
-    font-weight: 300;
-    font-family: 'Roboto';
-    line-height: 45px;
-}
 
 body {
-    color:rgb(0, 0, 0);
- text-decoration: none;
-    color:rgb(0, 0, 0);
-    cursor:pointer;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #000;
 }
 
+.sidebar {
+  width: 220px;
+  padding: 10px 10px 20px 10px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Меню */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebar-btn:hover,
+.sidebar-btn:focus {
+  background-color: #f0f0f0;
+  outline: none;
+}
+
+.sidebar-btn.active,
+.sidebar-btn.active:hover {
+  background-color: #dcdcdc;
+  font-weight: 600;
+}
+
+.sidebar-btn strong {
+  font-weight: 700;
+}
+
+
+@media (max-width: 600px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo-container {
+    margin-bottom: 0;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .sidebar ul li {
+    margin: 0 8px;
+  }
+  .sidebar-btn {
+    justify-content: center;
+  }
+}

@@ -2,8 +2,9 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: url('images/background_blago.png') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../images/background_blago.jpg') no-repeat center center fixed;
+  background-size: 10%;
+  background-position: right bottom;
   color: #000;
 }
 
@@ -133,7 +134,7 @@ main.video-grid {
 }
 
 .video-card {
-  background-color: #fafafa;
+  background-color: rgba(250, 250, 250, 0.75); /* напівпрозорий білий фон */
   border-radius: 8px;
   padding: 10px;
   box-sizing: border-box;

@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: url('background_blago.img') no-repeat center center fixed;
+  background: url('images/background_blago.img') no-repeat center center fixed;
   background-size: cover;
   color: #000;
 }

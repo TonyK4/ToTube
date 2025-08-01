@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  header.topbar {
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  main.video-grid {
+    margin-left: 0;
+    padding: 70px 10px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .video-card h3 {
+    font-size: 14px;
+  }
+
+  .video-card p {
+    font-size: 12px;
+  }
+
+  .search-form input[type="search"] {
+    font-size: 14px;
+    padding: 6px 40px 6px 10px;
+  }
+
+  .search-form button {
+    font-size: 14px;
+    padding: 0;
+    right: 10px;
+  }
+}

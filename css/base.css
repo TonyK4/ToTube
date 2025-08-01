@@ -1,8 +1,12 @@
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: url('../images/background_blago.jpg') no-repeat center center fixed;
-  background-size: 10%;
-  background-position: right bottom;
-  color: #000;
-}
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background: var(--body-bg-image)
+                var(--body-bg-repeat)
+                var(--body-bg-position)
+                var(--body-bg-attachment);
+    background-size: var(--body-bg-size);
+    background-position: var(--body-bg-final-position);
+  }
+  
